@@ -1,0 +1,289 @@
+:root{
+    --azul: #1b47d8;
+    --azul-claro: #83c4f0;
+    --preto: #141414;
+    --branco: rgb(240, 241, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--preto);
+    color: #fff;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 10px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+header .logo{
+    color: var(--branco);
+    font-family: Arial Black, Times;
+    font-size: 40px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+header .logo:hover{
+    color: var(--azul-claro);
+}
+
+header nav a{
+    color: rgb(223, 223, 223);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--azul-claro);
+}
+
+.anime-principal{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%), 
+    url(../imgs/Horizontal/your-lie-in-april.jpg);
+    height: 400px;
+    background-size: 100vw 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: 1px solid var(--azul-claro);
+}
+
+.anime-principal .container{
+    margin-left: 30px;
+    width: 70%;
+    height: 350px;
+}
+
+.anime-principal .titulo{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.anime-principal .descricao{
+    margin-top: 10px;
+}
+
+.anime-principal .botao{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    margin-left: 10px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--azul);
+}
+
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+.carrosel-animes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+}
+
+.carrosel-animes .titulo-carrosel{
+    color: var(--azul-claro);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.box-anime{
+    height: 500px;
+}
+
+/* Página de filmes */
+
+.animes-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--azul-claro);
+}
+
+.animes-lista h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+.anime{
+    display: flex;
+    border-top: 1px solid var(--azul-claro);
+    border-bottom: 1px solid var(--azul-claro);
+    padding: 25px;
+    align-items: center;
+}
+
+.anime img{
+    width: 20%;
+    height: auto;
+}
+
+.anime .info-anime{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.info-anime h3{
+    font-size: 30px;
+}
+
+.info-anime p, b{
+    font-size: 25px;
+}
+
+b{
+    color: var(--azul-claro);
+}
+
+/* séries */
+
+.dois-animes{
+    display: flex;
+    width: 100vw;
+}
+
+.anime-serie{
+    display: flex;
+    border: 1px solid var(--azul-claro);
+    padding: 25px;
+    align-items: center;
+    width: 50%;
+}
+
+.anime-serie img{
+    width: 30%;
+    height: auto;
+}
+
+.anime-serie .info-anime{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.anime-serie .info-anime h3{
+    font-size: 25px;
+}
+
+.anime-serie .info-anime p, b{
+    font-size: 20px;
+}
+
+.onze-vinte, .vinteUm-trinta, .trintaUm-ultimo{
+    display: none;
+}
+
+.ver-mais{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* sobre */
+
+.sobre{
+    width: 100vw;
+    height: 85vh;
+    padding: 25px;
+    border: 1px solid var(--azul-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre p{
+    width: 70%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.sobre .contato{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfil img{
+    border-radius: 50%;
+}
+
+.perfil h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.contato .redes-sociais b{
+    font-size: 25px;
+}
+
+.contato .redes-sociais a{
+    color: var(--branco);
+    font-size: 25px;
+}
